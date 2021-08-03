@@ -1,7 +1,7 @@
 var sequelize = require("sequelize")
 
-var conexao = new sequelize("danistore","root","",{
-    host: "localhost",
+var conexao = new sequelize("danistore","root","12345678",{
+    host: "danistore.cqayiioxyiq4.us-east-2.rds.amazonaws.com",
     dialect: "mysql"
 })
 
