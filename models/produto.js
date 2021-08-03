@@ -21,6 +21,7 @@ var produto = banco.define("produto",{
     timestamps: false
 })
 
+//produto.sync( )
 
 module.exports = produto
 
