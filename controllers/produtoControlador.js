@@ -137,7 +137,7 @@ produtoControlador.montarReqEdicao = function(req,res){
     .catch(
         function(err){
             res.status(500).send("Erro ao editar o produto: " + err);
-        });
+        })
 };
 
 
@@ -155,7 +155,7 @@ produtoControlador.montarReqDelete = function(req,res){
     .catch(
         function(err){
             res.status(500).send("Erro ao apagar um produto: " + err);
-        });
+        })
 };     
 
 module.exports = produtoControlador
