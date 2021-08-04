@@ -1,6 +1,6 @@
 var produto = require("../models/produto")
 var axios = require("axios")
-const qs = require("querystring")
+var qs = require("querystring")
 
 var produtoControlador = {}
 
@@ -97,11 +97,12 @@ produtoControlador.remover = function(req,res){
 
 }
 
+
 //---------------------------------------------------Handlebars--------------------------------------------------------
 
 //Solicitar novo formulário
 produtoControlador.novoFormulario = function(req,res){
-                res.render("novoForm")
+    res.render("novoForm")
 }
 
 
@@ -138,7 +139,7 @@ produtoControlador.montarReqEdicao = function(req,res){
         function(err){
             res.status(500).send("Erro ao editar o produto: " + err);
         })
-};
+}
 
 
 produtoControlador.montarReqDelete = function(req,res){
@@ -156,6 +157,6 @@ produtoControlador.montarReqDelete = function(req,res){
         function(err){
             res.status(500).send("Erro ao apagar um produto: " + err);
         })
-};     
+}     
 
 module.exports = produtoControlador
