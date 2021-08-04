@@ -13,7 +13,7 @@ var produto = banco.define("produto",{
         allowNull: false,
     },
     preco: {
-        type: sequelize.DECIMAL,
+        type: sequelize.DECIMAL(10,2),
         allowNull: false,
     }
 },{
@@ -21,7 +21,7 @@ var produto = banco.define("produto",{
     timestamps: false
 })
 
-//produto.sync( )
+produto.sync( )
 
 module.exports = produto
 
